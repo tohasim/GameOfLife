@@ -1,0 +1,26 @@
+body {
+	background-color: #aef1ff;
+	color: #8b8;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#board {
+	display: grid;
+	grid-template-columns: repeat(var(--GRID_COLS), max-content);
+	gap: 0.5em;
+}
+.cell {
+	width: 20px;
+	aspect-ratio: 1 / 1;
+	font-size: 300%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px rgb(168, 185, 255);
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.dead {
+	background-color: rgb(154, 196, 243);
+}
